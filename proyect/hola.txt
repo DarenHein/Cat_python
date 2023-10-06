@@ -1,0 +1,22 @@
+         ,---,
+      ,---, ,--.' |
+    ,---.'| |  |  :
+    |   | : :  :  :
+    |   | | :  |  |,--.
+  ,--.__| | |  :  '   |
+ /   ,'   | |  |   /' :
+.   '  /  | '  :  | | |
+'   ; |:  | |  |  ' | :
+|   | '/  ' |  :  :_:,'
+|   :    :| |  | ,'
+ \   \  /   `--''
+  `----'
+
+Mi primer programa que resuelve una problematica 
+espero que les sea de su agrado 
+
+TUTORIAL 
+tener instalado python 3 
+abrir la terminal y buscar el archivo o en dado caso con vscode 
+ejecuta imain.py 
+listo verifica que las iimagenes se encuentren 
