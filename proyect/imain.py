@@ -6,20 +6,11 @@ from paquete.Modulo_Descargas import descargas
 from paquete.Modulo_Imagenes import imagenes
 print(os.system("clear"))
 print ('''
-             ,---,
-      ,---, ,--.' |
-    ,---.'| |  |  :
-    |   | : :  :  :
-    |   | | :  |  |,--.
-  ,--.__| | |  :  '   |
- /   ,'   | |  |   /' :
-.   '  /  | '  :  | | |
-'   ; |:  | |  |  ' | :
-|   | '/  ' |  :  :_:,'
-|   :    :| |  | ,'
- \   \  /   `--''
-  `----'
-
+       
+.dP"Y8 88b 88    db    88""Yb .dP"Y8  dP"Yb  88""Yb 888888
+`Ybo." 88Yb88   dPYb   88__dP `Ybo." dP   Yb 88__dP   88
+o.`Y8b 88 Y88  dP__Yb  88"""  o.`Y8b Yb   dP 88"Yb    88
+8bodP' 88  Y8 dP""""Yb 88     8bodP'  YbodP  88  Yb   88
 
 ''')
 usuario = os.getlogin()

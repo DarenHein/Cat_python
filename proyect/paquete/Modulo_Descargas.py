@@ -1,4 +1,6 @@
 import os 
+import shutil
+import arrow
 def descargas():
     try : 
         lista = []
@@ -21,7 +23,17 @@ def descargas():
             archivo = str (elementos)
             if archivo.endswith(".jpeg") or archivo.endswith(".jpg"):
                 nueva_lista.append(archivo)
-                print(archivo)
+        
+        directorio_final = "/home/usuario/Imágenes/"
+        nuevo_directorio = directorio_final.replace("usuario",usuario)
+        print(nuevo_directorio)
+        existe = os.path.exists(nuevo_directorio)
+        if existe : 
+            fecha_actual = str(arrow.now())
+            juntar = os.path.join(nuevo_directorio,fecha_actual)
+            os.mkdir(juntar)
+            
+            
 
         pass 
 
