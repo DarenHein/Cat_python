@@ -12,7 +12,7 @@ def descargas():
             for directorios in os.listdir(nueva_ruta): 
                 if directorios == "Descargas" : 
                     ruta_final = os.path.join(nueva_ruta,directorios)
-        print("ruta actual -> " , ruta_final)
+        #print("ruta actual -> " , ruta_final)
         #todo ahora vamos a listar todo lo que tenga el directorios
         for directorios,sub,files in os.walk(ruta_final):
             for archivo in files:
@@ -26,13 +26,17 @@ def descargas():
         
         directorio_final = "/home/usuario/Imágenes/"
         nuevo_directorio = directorio_final.replace("usuario",usuario)
-        print(nuevo_directorio)
         existe = os.path.exists(nuevo_directorio)
+        
         if existe : 
             fecha_actual = str(arrow.now())
             juntar = os.path.join(nuevo_directorio,fecha_actual)
             os.mkdir(juntar)
+            for elementos in nueva_lista :
+                shutil.move(elementos,juntar)
+        
             
+
             
 
         pass 
