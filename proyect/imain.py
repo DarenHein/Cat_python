@@ -17,6 +17,7 @@ usuario = os.getlogin()
 print("Usuario -> " , usuario)
 ruta = os.getcwd()
 print("Ruta actual donde se ejecuta -> ",ruta)
+
 print("El programa busca imagenes con las extenciones .jpg , .jpeg ")
 print("En el los directorios siguientes ")
 print("1-. Imagenes")
@@ -32,6 +33,6 @@ elif entrar == "dh" :
     pass 
 else : 
     os.system("clear")
-    print("Bienvenido")
+    print("Trabajando en ello ....")
     descargas()
     #imagenes()
