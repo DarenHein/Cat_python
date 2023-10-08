@@ -26,17 +26,19 @@ def descargas():
             archivo = str(elementos)
             if archivo.endswith(".jpeg") or archivo.endswith(".jpg"):
                 nueva_lista.append(archivo)
-            else : 
-                print("No encontre archivos con esa extencion ")
 
-        directorio_final = "/home/usuario/Imágenes/"
-        nuevo_directorio = directorio_final.replace("usuario", usuario)
-        existe = os.path.exists(nuevo_directorio)
+        cantidad = len(nueva_lista)
 
-        if existe:
-            fecha_actual = str(arrow.now())
-            juntar = os.path.join(nuevo_directorio, fecha_actual)
-            os.mkdir(juntar)
+        if cantidad != 0 : 
+
+            directorio_final = "/home/usuario/Imágenes/"
+            nuevo_directorio = directorio_final.replace("usuario", usuario)
+            existe = os.path.exists(nuevo_directorio)
+
+            if existe:
+                fecha_actual = str(arrow.now())
+                juntar = os.path.join(nuevo_directorio, fecha_actual)
+                os.mkdir(juntar)
 
             # Inicializa la barra de progreso
             barra_progreso = tqdm(total=len(nueva_lista))
@@ -49,6 +51,8 @@ def descargas():
 
             # Cierra la barra de progreso
             barra_progreso.close()
+        else : 
+            print("No hay archivos on las extenciones .jpg/.jpeg en el directorio" )
 
     except OSError:
         print("Error en módulo os")
