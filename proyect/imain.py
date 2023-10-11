@@ -34,5 +34,5 @@ elif entrar == "dh" :
 else : 
     os.system("clear")
     print("Trabajando en ello ....")
-    descargas()
-    #imagenes()
+    #descargas()
+    imagenes()

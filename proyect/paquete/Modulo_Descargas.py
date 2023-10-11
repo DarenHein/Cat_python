@@ -13,7 +13,7 @@ def descargas():
         existe = os.path.exists(nueva_ruta)
         if existe:
             for directorios in os.listdir(nueva_ruta):
-                if directorios == "Descargas":
+                if directorios == "Descargas" or directorios == "Downloads":
                     ruta_final = os.path.join(nueva_ruta, directorios)
 
         for directorios, sub, files in os.walk(ruta_final):
